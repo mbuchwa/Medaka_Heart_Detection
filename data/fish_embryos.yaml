@@ -1,0 +1,21 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: FishYolo/cropped_480  # dataset root dir
+train: [images/Video-1,images/Video-2,images/Video-3,images/Video-4,images/Video-5,images/Video-6,images/Video-7,images/Video-8,images/Video-9,images/Video-11,images/Video-12,images/Video-13,images/Video-14,images/Video-28,images/Video-29,images/Video-30,images/Video-31,images/Video-32,images/Video-33,images/Video-34,images/Video-35,images/Video-36,images/Video-37,images/Video-38,images/Video-39,images/Video-40,images/Video-41,images/Video-50,images/Video-51,images/Video-52,images/Video-55,images/Video-56,images/Video-59,images/Video-60,images/Video-64,images/Video-65,images/Video-67,images/Video-61,images/Video-42,images/Video-70,images/Video-71,images/Video-72,images/Video-73,images/Video-74,images/Video-75,images/Video-76,images/Video-77,images/Video-78,images/Video-81,images/Video-82,images/Video-83,images/Video-84,images/Video-93,images/Video-95,images/Video-96,images/Video-97,images/Video-98,images/Video-99,images/Video-100]  # train images (relative to 'path') 118287 images
+val: [images/Video-10,images/Video-16,images/Video-17,images/Video-18,images/Video-19,images/Video-20,images/Video-22,images/Video-44,images/Video-45,images/Video-47,images/Video-48,images/Video-53,images/Video-57,images/Video-62,images/Video-68,images/Video-79,images/Video-85,images/Video-92,images/Video-90]  # val images (relative to 'path') 5000 images
+test: [images/Video-21]
+# Classes
+nc: 1  # number of classes
+names: ['heart']  # class names
+
+
+# Download script/URL (optional)
+
