@@ -67,7 +67,7 @@ def parse_opt():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--image_dir', type=str, default='data/test/images/',
-                        help='directory of the .tiff files to be cropped')
+                        help='directory of the .tif files to be cropped')
     parser.add_argument('--label_dir', type=str, default='data/test/labels/',
                         help='directory of the .json files with the label points which are converted to yolo format')
     opt = parser.parse_args()
