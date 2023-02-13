@@ -13,15 +13,15 @@ The code contains the best performing model of the experiments conducted in the 
 a mere 60 videos of Medaka. The hyperparemeters for the detections are fixed but can be altered in `detect.py`.
 
 ## Data
-A video which shall be detected should be stored as a folder containing the 240 tif files. The model was only trained 
-and tested with videos of 240 .tif frames should be agnostic about the number of frames. However the video needs to be 
+A video which shall be detected should be stored as a folder containing the 240 .tif files. The model was only trained 
+and tested with videos of 240 .tif frames but should be agnostic about the number of frames. However the video needs to be 
 composed of at least 20 images as this is the input depth. 
 
-The tif files belonging to on Video should be stored in
+The .tif files belonging to on Video should be stored in
 
 - `data/test/images/*video_name*/`
 
-If you have the .json ground truth bounding box points, put them as a file into
+If you have the .json ground truth bounding box points, put them as a txt file into
 
 - `data/test/labels/`
 
