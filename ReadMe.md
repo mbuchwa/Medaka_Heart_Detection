@@ -39,7 +39,7 @@ Install the rest of the requirements by running in the `Medaka_Heart_Detection` 
 
 `pip install -r requirements.txt`.
 
-## Preprocessing
+## Preprocessing and Run
 
 The .tif frames have an original size of 900x900. For the network we center-cropped the images to 480x480.
 For this preprocessing step run the following comman on the original sized video folder :
